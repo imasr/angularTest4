@@ -1,0 +1,205 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  body {
+    padding: 0;
+  }
+  
+  /* Everything but the jumbotron gets side spacing for mobile first views */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Custom page header */
+  
+  /* Make the masthead heading the same height as the navigation */
+  .header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+  
+  /* Custom page footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    padding-top: 19px;
+    min-height: 50px;
+    background: black;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+  
+  /* Main marketing message and sign up button */
+  .jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+  
+  /* Supporting marketing content */
+  .marketing {
+    margin: 40px 0;
+  }
+  .marketing p + h4 {
+    margin-top: 28px;
+  }
+  
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 730px;
+    }
+  
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    /* Space out the masthead */
+  
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+      border-bottom: 0;
+    }
+  }
+  
+  .navbar-default{
+    background: black;
+    color: white;
+    margin-bottom: 0px;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navbar-default .navbar-brand{
+    color: white;
+  
+  }
+  .navbar-default .navbar-nav > li > a{
+    color: white;
+    font-size: 14px;
+  
+  }
+  .navbar-default .navbar-nav > li:hover > a{
+    color: gray;
+  }
+  @media(min-width:768px){
+    .navbar-collapse .navbar-nav {
+      float: right;
+      margin-right: 20%;
+    }
+  }
+  @media (min-width:425px){
+    .navbar-nav .dropdown-menu{
+        position: absolute;
+    }
+  }
+  .top{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* min-height: 473px; */
+  }
+  .header {
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+  }
+  @media(max-width:420px){
+    .navbar-brand{
+      font-size: 14px;
+    }
+  }
+  @media(max-width:330px){
+    .navbar-brand{
+      font-size: 13px;
+    }
+  }
+  
+  .dropdown-submenu {
+      position: relative;
+  }
+  .dropdown-menu li{
+      border-bottom: 1px solid #f1f1f1;
+      cursor: pointer;
+      padding: 5px;
+  }
+  .dropdown-menu{
+      padding: 0px;
+      -webkit-box-shadow: 0px 0px 0px 1px rgb(234, 234, 234);
+      -moz-box-shadow: 0px 0px 0px 1px rgb(234, 234, 234);
+      box-shadow: 0px 0px 0px 1px rgb(234, 234, 234);
+      border-radius: 1px;
+      margin-top: 12px;
+  }
+  .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -6px;
+      margin-left: -1px;
+      -webkit-border-radius: 0 6px 6px 6px;
+      -moz-border-radius: 0 6px 6px;
+      border-radius: 0 6px 6px 6px;
+  }
+  .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+  }
+  .dropdown:hover>.dropdown-menu {
+      display: block;
+  }
+  .dropdown-submenu>.dropdown-menu{
+    margin-top: -3px;
+    border-radius: 1px;
+  }
+  .dropdown-submenu>.dropdown-menu> li> a:hover{
+    color: black;
+    text-decoration: none;
+  }
+  .dropdown-submenu>.dropdown-menu> li> a{
+    color:#424242;
+    text-decoration: none;
+  }
+  .dropdown-submenu> a:hover{
+    color: black;
+    text-decoration: none;
+  }
+  .dropdown-submenu> a{
+    color:#424242;
+    text-decoration: none;
+  }
+  
+@media (min-width: 1200px){
+    .container {
+        max-width: 991px;
+    }
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.pad18{
+    padding: 18px;
+}

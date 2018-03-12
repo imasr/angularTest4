@@ -1,0 +1,72 @@
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <!-- <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/">RETAIL MANAGEMENT SYSTEM</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Select location</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li *ngFor="let data of locationData" class="dropdown-submenu">
+                      <a (click)="selectLocation(data)" tabindex="-1" class="dropdown-toggle" data-toggle="dropdown">{{data.name}}</a>
+                      <ul class="dropdown-menu">
+                        <li *ngFor="let child of data.branches">
+                          <a (click)="selectBranch(data,child)" tabindex="-1">{{child.name}}</a>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">RETAIL MANAGEMENT SYSTEM</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle pad18" data-toggle="dropdown">Select location</a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li *ngFor="let data of locationData" class="dropdown-submenu">
+                        <a (click)="selectLocation(data)" tabindex="-1" class="dropdown-toggle" data-toggle="dropdown">{{data.name}}</a>
+                        <ul class="dropdown-menu">
+                          <li *ngFor="let child of data.branches">
+                            <a (click)="selectBranch(data,child)" tabindex="-1">{{child.name}}</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+    </nav>
+  </div>
+    
+
+    <div class="container">
+      <div class="col-md-12" *ngIf="data">
+        <app-category [data]="data"></app-category>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p></p>
+      </div>
+    </div>
