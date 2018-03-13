@@ -9,6 +9,8 @@ import { ApiServiceService } from '../api-service.service';
 export class DashboardComponent implements OnInit {
   locationData = [];
   data: any; 
+  nav= [];
+  maindata: any;
   constructor(private apiCommunity: ApiServiceService) { }
 
   ngOnInit() {
@@ -26,11 +28,22 @@ export class DashboardComponent implements OnInit {
   };
 
     selectLocation(location) {
-      this.data = { 'data': location };
+      console.log(location)
+      this.data = location.branches;
       // $rootScope.$broadcast("categoryData", data);
     };
-    selectBranch(location, branch){
-      this.data = { 'data': location, 'branch': branch };
+    selectBranch(branch){
+      console.log(branch)
+      this.maindata=branch
+      this.nav=[branch];
+      this.data =branch.categories;
       // $rootScope.$broadcast("categoryData", data);
     };
+    subcategory(data){
+      console.log(data)
+      if (data.subcategories){
+        this.nav.push(data)        
+        this.data = data.subcategories;
+      }
+    }
 }
