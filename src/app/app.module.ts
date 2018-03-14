@@ -6,7 +6,6 @@ import { routes } from './app.route';
 
 
 import { AppComponent } from './app.component';
-import { CategoryComponent } from './category/category.component';
 import { ApiServiceService } from './api-service.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
@@ -14,7 +13,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CategoryComponent,
     DashboardComponent
   ],
   imports: [
